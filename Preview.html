@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+body{
+    background-color: wheat;
+}
+button{
+    border-radius: 10px;
+    width: 5%;
+    padding: 5px;
+    font-size: x-large;
+    border: none;
+}
+
+button:hover{
+    background-color: white;
+}
+
+button:active{
+    background-color: #f0f0f0;
+}
+
+.close{
+    color: red;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.close:hover{
+    color: rgb(138, 43, 43);
+}
+
+.listToDo{
+    color: black;
+    font-size: x-large;
+    font-family: sans-serif;
+    margin: 0px 0px 0px 38px;
+    padding: 30px 0 10px 0;
+}
+
+.toDo{
+    text-align: center; 
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 1rem;
+    padding: 1.5rem;
+    z-index: 10;
+    color: whitesmoke;
+    width: 33%;
+    line-height: 225%;
+    background-color: papayawhip;
+    margin-left: 33%;
+    }
+</style>
+<body>
+    <form autocomplete="off">
+    <p style = "text-align:center; font-size: x-large; font-family: sans-serif;">listToDo</p>
+    <p style = "text-align:center">
+        <select id = 'selectOfUser' name="user" style = "width: 13%; padding-top: 8px; font-size: x-large; padding-bottom: 8px;">
+        <option disabled selected>select user</option>
+        </select>
+    </p>
+<div style = "justify-content: center; display: flex; gap: 1%;">
+    <label>
+ <input style= "padding-left: 6px; font-size: x-large;" name = 'todo' placeholder="new todo"/>
+</label>
+ <button>send</button>
+ <br>
+ </div>
+<p>
+    </form>
+    <ol class ="toDo" id = "list"></ol>
+</p>
+<script src = "toDoScript.js"></script>
+</body>
+
+</html>
